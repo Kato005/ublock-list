@@ -1,5 +1,5 @@
 ! YT Home - Hide Mixes
-! youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
+youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
 ! YT Sidebar - Hide Mixes
 youtube.com##ytd-compact-radio-renderer, :is(#related yt-lockup-view-model,ytd-compact-video-renderer):has([href*="&start_radio=1"])
 ! YT Search- Hide Mixes
