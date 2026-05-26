@@ -14,3 +14,8 @@ www.facebook.com##:is([aria-posinset],[aria-describedby]:not([aria-posinset])):h
 www.facebook.com##:is([aria-posinset],[aria-describedby]:not([aria-posinset])):has([aria-label="Reels"]):style(height: 0 !important; overflow: hidden !important;)
 ! Suggested pages
 www.facebook.com##:is([aria-posinset],[aria-describedby]:not([aria-posinset])):has([aria-label="Suggested pages"]):style(height: 0 !important; overflow: hidden !important;)
+
+! Removes FB's "Related discussions" panel:
+facebook.com##div[role=article] span:not(>*):has-text(/^Related discussions$/):upward(span)
+! FB - news and group feeds - related discussions - hide the "# related" link/button
+facebook.com##div[role=button] > span:not(>*):has-text(/related/i):upward(4)
